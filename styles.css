@@ -7,7 +7,7 @@ body{
 form{
     margin:0;
 }
-header, #addAction, h4, #listContent, table, #update{
+header, #addAction, h1, h4, #listContent, table, #update{
     text-align:center;
 }
 header{
@@ -32,8 +32,9 @@ table{
     margin-left:auto; 
     margin-right:auto; 
 }
-#head1, #head2{
+#head1, #head2, #head3{
     background-color:#ff6b8b;
+    /*background-color: red;*/
     color:#264166;
     border-color:white;
 }
