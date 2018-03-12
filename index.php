@@ -38,6 +38,7 @@
         unset($_POST['item']);
     }
     else{
+        if(!isset($_POST['up'])){
         // print($_SESSION['loadCounter']);
         if($_SESSION['loadCounter'] != 1){
             echo "<h1 id='errormsg'>ERROR! both the action and priority must be set</h1>";
@@ -45,6 +46,7 @@
         }
         else{
             $_SESSION['loadCounter']++;
+        }
         }
     }
     if(isset($_POST['up'])){
