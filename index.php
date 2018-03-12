@@ -14,8 +14,10 @@
             array_pop($_SESSION['actions']);
         }
         else{
-            swap($_SESSION['actions'][$_POST['checkoff']], $_SESSION['actions'][count($_SESSION['actions'])-1]);
-            array_pop($_SESSION['actions']);
+            unset($_SESSION['actions'][$_POST['checkoff']]);
+            $_SESSION['actions'] = array_values($_SESSION['actions']);
+            // swap($_SESSION['actions'][$_POST['checkoff']], $_SESSION['actions'][count($_SESSION['actions'])-1]);
+            // array_pop($_SESSION['actions']);
         }
         // unset($_SESSION['actions'][(int)$_POST['checkoff']]);
     }
@@ -29,6 +31,9 @@
             
         }
         unset($_POST['item']);
+    }
+    if(isset($_POST['up'])){
+        shuffle($_SESSION['actions']);
     }
 
 ?>
@@ -79,9 +84,10 @@
             </table>
             <!--<input type="radio" id = "checked" name="do" value = "check"/>-->
             <br><br>
-            <!--<form id="update" method="post">-->
-            <!--    <input type="submit" name="up" value="update"/>-->
-            <!--</form>-->
+            
+            <form id="update" method="post">
+                <input type="submit" name="up" value="suffle list"/>
+            </form>
         </div>
     </body>
 </html>
