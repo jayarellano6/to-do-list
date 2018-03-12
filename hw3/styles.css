@@ -1,0 +1,61 @@
+body{
+    font-family:'Slabo 27px';
+    background-color: #264166;
+    /*margin:0;*/
+    color:white;
+}
+form{
+    margin:0;
+}
+header, #addAction, h4, #listContent, table, #update{
+    text-align:center;
+}
+header{
+    font-size: 35px;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+}
+td{
+    border-style:solid;
+    border-color:#264166;
+    border-width:.5px;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:white;
+    color:#264166;
+}
+table{
+    border-spacing:0;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+#head1, #head2{
+    background-color:#ff6b8b;
+    color:#264166;
+    border-color:white;
+}
+input[type=submit]{
+    background-color:#ff6b8b;
+    color: white;
+    border-color:white;
+    padding:10px;
+}
+input[type=text]{
+    background-color:#ff6b8b;
+    color: white;
+    border-color:white;
+    padding:10px;
+}
+ input[type=text]::placeholder{
+    color: white;
+    opacity:1;
+}
+h4{
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size:22px;
+    font-weight: normal;
+}
